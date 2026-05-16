@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Abu Faza | Jasa Digital Premium</title>
-  <meta name="description" content="Jasa digital profesional: desain, konten sosmed, konsultasi bisnis online. Bayar mudah via PayPal. Garansi hasil terbaik." />
+  <title>Abu Faza | Premium Digital Services</title>
+  <meta name="description" content="Professional digital services: social media content, branding design, online business consulting. Pay easily via PayPal. Results guaranteed." />
+  <meta property="og:title" content="Abu Faza | Premium Digital Services" />
+  <meta property="og:description" content="Grow your business online with professional content, design & digital strategy. Pay via PayPal." />
+  <meta property="og:url" content="https://amandaleathermanufacture.github.io/amandaonservice" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -12,41 +17,45 @@
 </head>
 <body>
 
-  <!-- Animated BG Blobs -->
   <div class="blob blob-1"></div>
   <div class="blob blob-2"></div>
   <div class="blob blob-3"></div>
 
+  <!-- LANG TOGGLE -->
+  <div class="lang-bar">
+    <button class="lang-btn active" id="btn-lang-en" onclick="setLang('en')">EN</button>
+    <span class="lang-sep">|</span>
+    <button class="lang-btn" id="btn-lang-id" onclick="setLang('id')">ID</button>
+  </div>
+
   <!-- HERO -->
   <section class="hero" id="hero">
-    <div class="badge-top">🌟 Tersedia untuk Order Baru</div>
+    <div class="badge-top" data-en="🌟 Available for New Orders" data-id="🌟 Tersedia untuk Order Baru">🌟 Available for New Orders</div>
 
     <div class="avatar-wrap">
       <div class="avatar-ring"></div>
-      <div class="avatar">
-        <span>AF</span>
-      </div>
+      <div class="avatar"><span>AF</span></div>
       <div class="status-dot"></div>
     </div>
 
     <h1 class="hero-name">Abu Faza</h1>
-    <p class="hero-tagline">Jasa Digital <span class="highlight">Premium</span> &amp; Profesional</p>
-    <p class="hero-sub">Saya bantu bisnis Anda tumbuh secara online — konten, desain, dan strategi digital yang menghasilkan.</p>
+    <p class="hero-tagline" data-en="Premium &amp; Professional <span class='highlight'>Digital Services</span>" data-id="Jasa Digital <span class='highlight'>Premium</span> &amp; Profesional">Premium &amp; Professional <span class="highlight">Digital Services</span></p>
+    <p class="hero-sub" data-en="I help your business grow online — content, design, and digital strategy that delivers results." data-id="Saya bantu bisnis Anda tumbuh secara online — konten, desain, dan strategi digital yang menghasilkan.">I help your business grow online — content, design, and digital strategy that delivers results.</p>
 
     <div class="stats-row">
       <div class="stat">
         <span class="stat-num">50+</span>
-        <span class="stat-label">Klien</span>
+        <span class="stat-label" data-en="Clients" data-id="Klien">Clients</span>
       </div>
       <div class="stat-divider"></div>
       <div class="stat">
         <span class="stat-num">100%</span>
-        <span class="stat-label">Puas</span>
+        <span class="stat-label" data-en="Satisfied" data-id="Puas">Satisfied</span>
       </div>
       <div class="stat-divider"></div>
       <div class="stat">
         <span class="stat-num">Fast</span>
-        <span class="stat-label">Delivery</span>
+        <span class="stat-label" data-en="Delivery" data-id="Pengiriman">Delivery</span>
       </div>
     </div>
 
@@ -64,94 +73,92 @@
 
   <!-- SERVICES -->
   <section class="section" id="services">
-    <div class="section-label">✦ LAYANAN</div>
-    <h2 class="section-title">Pilih Paket yang Kamu Butuhkan</h2>
-    <p class="section-sub">Semua layanan bisa dibayar via <strong>PayPal</strong> — aman dan cepat.</p>
+    <div class="section-label" data-en="✦ SERVICES" data-id="✦ LAYANAN">✦ SERVICES</div>
+    <h2 class="section-title" data-en="Choose the Package You Need" data-id="Pilih Paket yang Kamu Butuhkan">Choose the Package You Need</h2>
+    <p class="section-sub" data-en="All services payable via <strong>PayPal</strong> — safe and instant." data-id="Semua layanan bisa dibayar via <strong>PayPal</strong> — aman dan cepat.">All services payable via <strong>PayPal</strong> — safe and instant.</p>
 
     <div class="cards-grid">
-
       <!-- Card 1 -->
-      <div class="card" id="card-konten">
+      <div class="card" id="card-content">
         <div class="card-icon">✍️</div>
-        <h3 class="card-title">Konten Sosial Media</h3>
-        <p class="card-desc">Caption menarik, hashtag riset, konten harian untuk Instagram/TikTok/Facebook Anda.</p>
+        <h3 class="card-title" data-en="Social Media Content" data-id="Konten Sosial Media">Social Media Content</h3>
+        <p class="card-desc" data-en="Engaging captions, hashtag research, daily content for your Instagram/TikTok/Facebook." data-id="Caption menarik, hashtag riset, konten harian untuk Instagram/TikTok/Facebook Anda.">Engaging captions, hashtag research, daily content for your Instagram/TikTok/Facebook.</p>
         <div class="card-features">
-          <span>✓ 15 Caption/bulan</span>
-          <span>✓ Riset hashtag</span>
-          <span>✓ Revisi unlimited</span>
+          <span data-en="✓ 15 Captions/month" data-id="✓ 15 Caption/bulan">✓ 15 Captions/month</span>
+          <span data-en="✓ Hashtag research" data-id="✓ Riset hashtag">✓ Hashtag research</span>
+          <span data-en="✓ Unlimited revisions" data-id="✓ Revisi unlimited">✓ Unlimited revisions</span>
         </div>
         <div class="card-price">
           <span class="price-old">$30</span>
-          <span class="price-main">$15<small>/bulan</small></span>
+          <span class="price-main">$15<small data-en="/month" data-id="/bulan">/month</small></span>
         </div>
-        <button class="btn-order" onclick="order('Konten Sosial Media', 15)" id="btn-order-konten">Pesan Sekarang</button>
+        <button class="btn-order" onclick="order('Social Media Content', 15)" id="btn-order-content" data-en="Order Now" data-id="Pesan Sekarang">Order Now</button>
       </div>
 
       <!-- Card 2 FEATURED -->
       <div class="card card-featured" id="card-branding">
-        <div class="badge-featured">🔥 TERLARIS</div>
+        <div class="badge-featured" data-en="🔥 BEST SELLER" data-id="🔥 TERLARIS">🔥 BEST SELLER</div>
         <div class="card-icon">🎨</div>
-        <h3 class="card-title">Desain &amp; Branding</h3>
-        <p class="card-desc">Logo, template feed Instagram, thumbnail YouTube, dan materi promosi digital.</p>
+        <h3 class="card-title" data-en="Design &amp; Branding" data-id="Desain &amp; Branding">Design &amp; Branding</h3>
+        <p class="card-desc" data-en="Logo, Instagram feed templates, YouTube thumbnails, and digital promotional materials." data-id="Logo, template feed Instagram, thumbnail YouTube, dan materi promosi digital.">Logo, Instagram feed templates, YouTube thumbnails, and digital promotional materials.</p>
         <div class="card-features">
-          <span>✓ 5 Desain custom</span>
-          <span>✓ File editable</span>
-          <span>✓ Fast 3 hari kerja</span>
+          <span data-en="✓ 5 Custom designs" data-id="✓ 5 Desain custom">✓ 5 Custom designs</span>
+          <span data-en="✓ Editable source files" data-id="✓ File editable">✓ Editable source files</span>
+          <span data-en="✓ Fast 3 business days" data-id="✓ Fast 3 hari kerja">✓ Fast 3 business days</span>
         </div>
         <div class="card-price">
           <span class="price-old">$50</span>
-          <span class="price-main">$25<small>/paket</small></span>
+          <span class="price-main">$25<small data-en="/package" data-id="/paket">/package</small></span>
         </div>
-        <button class="btn-order btn-order-featured" onclick="order('Desain & Branding', 25)" id="btn-order-branding">Pesan Sekarang</button>
+        <button class="btn-order btn-order-featured" onclick="order('Design & Branding', 25)" id="btn-order-branding" data-en="Order Now" data-id="Pesan Sekarang">Order Now</button>
       </div>
 
       <!-- Card 3 -->
-      <div class="card" id="card-konsultasi">
+      <div class="card" id="card-consult">
         <div class="card-icon">🚀</div>
-        <h3 class="card-title">Konsultasi Bisnis Online</h3>
-        <p class="card-desc">Strategi jualan online, analisis kompetitor, dan roadmap pertumbuhan bisnis digital Anda.</p>
+        <h3 class="card-title" data-en="Business Consulting" data-id="Konsultasi Bisnis Online">Business Consulting</h3>
+        <p class="card-desc" data-en="Online selling strategy, competitor analysis, and digital business growth roadmap." data-id="Strategi jualan online, analisis kompetitor, dan roadmap pertumbuhan bisnis digital Anda.">Online selling strategy, competitor analysis, and digital business growth roadmap.</p>
         <div class="card-features">
-          <span>✓ Sesi 60 menit</span>
-          <span>✓ Via Zoom/WA</span>
-          <span>✓ Rekap tertulis</span>
+          <span data-en="✓ 60-minute session" data-id="✓ Sesi 60 menit">✓ 60-minute session</span>
+          <span data-en="✓ Via Zoom / WhatsApp" data-id="✓ Via Zoom/WA">✓ Via Zoom / WhatsApp</span>
+          <span data-en="✓ Written summary" data-id="✓ Rekap tertulis">✓ Written summary</span>
         </div>
         <div class="card-price">
           <span class="price-old">$40</span>
-          <span class="price-main">$20<small>/sesi</small></span>
+          <span class="price-main">$20<small data-en="/session" data-id="/sesi">/session</small></span>
         </div>
-        <button class="btn-order" onclick="order('Konsultasi Bisnis Online', 20)" id="btn-order-konsultasi">Pesan Sekarang</button>
+        <button class="btn-order" onclick="order('Business Consulting', 20)" id="btn-order-consult" data-en="Order Now" data-id="Pesan Sekarang">Order Now</button>
       </div>
-
     </div>
   </section>
 
   <!-- HOW IT WORKS -->
   <section class="section section-steps" id="how">
-    <div class="section-label">✦ CARA KERJA</div>
-    <h2 class="section-title">Gampang Banget, 3 Langkah!</h2>
+    <div class="section-label" data-en="✦ HOW IT WORKS" data-id="✦ CARA KERJA">✦ HOW IT WORKS</div>
+    <h2 class="section-title" data-en="Super Simple — Just 3 Steps!" data-id="Gampang Banget, 3 Langkah!">Super Simple — Just 3 Steps!</h2>
 
     <div class="steps">
       <div class="step">
         <div class="step-num">01</div>
         <div class="step-content">
-          <h4>Pilih &amp; Pesan</h4>
-          <p>Klik tombol pesan, isi form singkat tentang kebutuhan kamu.</p>
+          <h4 data-en="Pick &amp; Order" data-id="Pilih &amp; Pesan">Pick &amp; Order</h4>
+          <p data-en="Click Order Now, fill in a short form about your needs." data-id="Klik tombol pesan, isi form singkat tentang kebutuhan kamu.">Click Order Now, fill in a short form about your needs.</p>
         </div>
       </div>
       <div class="step-arrow">→</div>
       <div class="step">
         <div class="step-num">02</div>
         <div class="step-content">
-          <h4>Bayar via PayPal</h4>
-          <p>Pembayaran aman 100% via PayPal. Diterima dari seluruh dunia.</p>
+          <h4 data-en="Pay via PayPal" data-id="Bayar via PayPal">Pay via PayPal</h4>
+          <p data-en="100% secure payment via PayPal. Accepted worldwide." data-id="Pembayaran aman 100% via PayPal. Diterima dari seluruh dunia.">100% secure payment via PayPal. Accepted worldwide.</p>
         </div>
       </div>
       <div class="step-arrow">→</div>
       <div class="step">
         <div class="step-num">03</div>
         <div class="step-content">
-          <h4>Terima Hasilnya</h4>
-          <p>Pekerjaan selesai sesuai deadline. Revisi hingga puas!</p>
+          <h4 data-en="Receive Your Work" data-id="Terima Hasilnya">Receive Your Work</h4>
+          <p data-en="Delivered on time. Revisions until you're 100% happy!" data-id="Pekerjaan selesai sesuai deadline. Revisi hingga puas!">Delivered on time. Revisions until you're 100% happy!</p>
         </div>
       </div>
     </div>
@@ -159,64 +166,63 @@
 
   <!-- TESTIMONIALS -->
   <section class="section" id="testimonials">
-    <div class="section-label">✦ TESTIMONI</div>
-    <h2 class="section-title">Kata Klien Kami</h2>
+    <div class="section-label" data-en="✦ TESTIMONIALS" data-id="✦ TESTIMONI">✦ TESTIMONIALS</div>
+    <h2 class="section-title" data-en="What Our Clients Say" data-id="Kata Klien Kami">What Our Clients Say</h2>
 
     <div class="testimonials-grid">
       <div class="testi-card">
         <div class="testi-stars">★★★★★</div>
-        <p class="testi-text">"Kontennya bagus banget! Engagement Instagram saya naik 3x lipat dalam sebulan. Recommended!"</p>
+        <p class="testi-text" data-en='"Amazing content! My Instagram engagement tripled in just one month. Highly recommended!"' data-id='"Kontennya bagus banget! Engagement Instagram saya naik 3x lipat dalam sebulan. Recommended!"'>"Amazing content! My Instagram engagement tripled in just one month. Highly recommended!"</p>
         <div class="testi-author">
           <div class="testi-avatar">SR</div>
           <div>
             <div class="testi-name">Sari R.</div>
-            <div class="testi-role">Pemilik Toko Online</div>
+            <div class="testi-role" data-en="Online Store Owner" data-id="Pemilik Toko Online">Online Store Owner</div>
           </div>
         </div>
       </div>
       <div class="testi-card testi-card-mid">
         <div class="testi-stars">★★★★★</div>
-        <p class="testi-text">"Logo dan desain template feed IG-nya keren abis! Bisnis saya terlihat jauh lebih profesional sekarang."</p>
+        <p class="testi-text" data-en='"The logo and IG feed templates are stunning! My business looks so much more professional now."' data-id='"Logo dan desain template feed IG-nya keren abis! Bisnis saya terlihat jauh lebih profesional sekarang."'>"The logo and IG feed templates are stunning! My business looks so much more professional now."</p>
         <div class="testi-author">
           <div class="testi-avatar">BW</div>
           <div>
             <div class="testi-name">Budi W.</div>
-            <div class="testi-role">Founder Startup</div>
+            <div class="testi-role" data-en="Startup Founder" data-id="Founder Startup">Startup Founder</div>
           </div>
         </div>
       </div>
       <div class="testi-card">
         <div class="testi-stars">★★★★★</div>
-        <p class="testi-text">"Konsultasinya super helpful! Dapat strategi jualan yang langsung bisa dieksekusi. Worth it banget!"</p>
+        <p class="testi-text" data-en='"The consulting was incredibly helpful! Got actionable selling strategies I could implement right away. 100% worth it!"' data-id='"Konsultasinya super helpful! Dapat strategi jualan yang langsung bisa dieksekusi. Worth it banget!"'>"The consulting was incredibly helpful! Got actionable selling strategies I could implement right away. 100% worth it!"</p>
         <div class="testi-author">
           <div class="testi-avatar">DM</div>
           <div>
             <div class="testi-name">Dian M.</div>
-            <div class="testi-role">Content Creator</div>
+            <div class="testi-role" data-en="Content Creator" data-id="Content Creator">Content Creator</div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA BOTTOM -->
+  <!-- CTA -->
   <section class="cta-section" id="contact">
     <div class="cta-content">
-      <h2>Siap Mulai? Hubungi Sekarang!</h2>
-      <p>Respon cepat dalam 1x24 jam. Konsultasi awal <strong>GRATIS</strong>.</p>
+      <h2 data-en="Ready to Start? Contact Us Now!" data-id="Siap Mulai? Hubungi Sekarang!">Ready to Start? Contact Us Now!</h2>
+      <p data-en="Fast response within 24 hours. Initial consultation is <strong>FREE</strong>." data-id="Respon cepat dalam 1x24 jam. Konsultasi awal <strong>GRATIS</strong>.">Fast response within 24 hours. Initial consultation is <strong>FREE</strong>.</p>
       <div class="cta-buttons">
-        <a href="https://wa.me/6287760929944?text=Halo,%20saya%20tertarik%20dengan%20layanan%20digital%20Anda" target="_blank" class="btn-cta-wa" id="btn-cta-wa">
-          💬 Chat WhatsApp
+        <a href="https://wa.me/6287760929944?text=Hello,%20I%20am%20interested%20in%20your%20digital%20services" target="_blank" class="btn-cta-wa" id="btn-cta-wa">
+          💬 <span data-en="Chat on WhatsApp" data-id="Chat WhatsApp">Chat on WhatsApp</span>
         </a>
-        <a href="mailto:amandaleathershop@gmail.com?subject=Order Jasa Digital" class="btn-cta-email" id="btn-cta-email">
-          📧 Kirim Email
+        <a href="mailto:amandaleathershop@gmail.com?subject=Order Digital Service" class="btn-cta-email" id="btn-cta-email">
+          📧 <span data-en="Send Email" data-id="Kirim Email">Send Email</span>
         </a>
       </div>
-      <p class="cta-note">💳 Pembayaran aman via PayPal · 🔒 Privasi terjaga · ✅ Garansi kepuasan</p>
+      <p class="cta-note" data-en="💳 Secure PayPal payments · 🔒 Privacy protected · ✅ Satisfaction guaranteed" data-id="💳 Bayar aman via PayPal · 🔒 Privasi terjaga · ✅ Garansi kepuasan">💳 Secure PayPal payments · 🔒 Privacy protected · ✅ Satisfaction guaranteed</p>
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer class="footer">
     <p>© 2026 Abu Faza Digital Services · <a href="mailto:amandaleathershop@gmail.com">amandaleathershop@gmail.com</a></p>
   </footer>
@@ -225,29 +231,29 @@
   <div class="modal-overlay" id="modal" onclick="closeModal(event)">
     <div class="modal">
       <button class="modal-close" onclick="closeModal()" id="btn-modal-close">✕</button>
-      <h3 class="modal-title" id="modal-title">Pesan Layanan</h3>
-      <p class="modal-sub">Isi data singkat, lalu lanjut bayar via PayPal.</p>
+      <h3 class="modal-title" id="modal-title">Order Service</h3>
+      <p class="modal-sub" data-en="Fill in your details, then pay securely via PayPal." data-id="Isi data singkat, lalu lanjut bayar via PayPal.">Fill in your details, then pay securely via PayPal.</p>
 
       <form id="order-form" onsubmit="submitOrder(event)">
         <div class="form-group">
-          <label>Nama Lengkap</label>
-          <input type="text" id="input-name" placeholder="Nama kamu" required />
+          <label data-en="Full Name" data-id="Nama Lengkap">Full Name</label>
+          <input type="text" id="input-name" data-placeholder-en="Your name" data-placeholder-id="Nama kamu" placeholder="Your name" required />
         </div>
         <div class="form-group">
-          <label>Email / WhatsApp</label>
-          <input type="text" id="input-contact" placeholder="email atau nomor WA" required />
+          <label data-en="Email / WhatsApp" data-id="Email / WhatsApp">Email / WhatsApp</label>
+          <input type="text" id="input-contact" data-placeholder-en="email or WA number" data-placeholder-id="email atau nomor WA" placeholder="email or WA number" required />
         </div>
         <div class="form-group">
-          <label>Ceritakan Kebutuhan Kamu</label>
-          <textarea id="input-desc" placeholder="Apa yang kamu butuhkan? Semakin detail semakin baik..." rows="4" required></textarea>
+          <label data-en="Describe Your Needs" data-id="Ceritakan Kebutuhan Kamu">Describe Your Needs</label>
+          <textarea id="input-desc" data-placeholder-en="What do you need? The more detail the better..." data-placeholder-id="Apa yang kamu butuhkan? Semakin detail semakin baik..." placeholder="What do you need? The more detail the better..." rows="4" required></textarea>
         </div>
-        <div class="price-summary" id="price-summary">
-          <span>Total Pembayaran:</span>
+        <div class="price-summary">
+          <span data-en="Total Payment:" data-id="Total Pembayaran:">Total Payment:</span>
           <span class="price-bold" id="modal-price">$0</span>
         </div>
         <button type="submit" class="btn-paypal" id="btn-pay-paypal">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944.901C5.026.382 5.474 0 5.998 0h7.46c2.57 0 4.578.543 5.69 1.81 1.01 1.15 1.304 2.42 1.012 4.287-.023.143-.047.288-.077.437-.983 5.05-4.349 6.797-8.647 6.797h-2.19c-.524 0-.968.382-1.05.9l-1.12 7.106zm14.146-14.42a3.35 3.35 0 0 0-.607-.541c-.013.076-.026.175-.041.254-.59 3.025-2.606 4.243-5.813 4.243h-2.19c-.524 0-.968.382-1.05.9l-1.52 9.635-.094.602h3.614c.46 0 .85-.333.92-.789l.038-.198.74-4.693.048-.258c.07-.456.46-.79.92-.79h.579c3.748 0 6.683-1.522 7.54-5.925.36-1.847.174-3.389-.784-4.44z"/></svg>
-          Bayar via PayPal — <span id="btn-price">$0</span>
+          <span data-en="Pay via PayPal —" data-id="Bayar via PayPal —">Pay via PayPal —</span> <span id="btn-price">$0</span>
         </button>
       </form>
     </div>
